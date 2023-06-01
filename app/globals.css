@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.heading{
+  background-color: rgb(53, 62, 65);
+}
+.text{
+  color: white;
+  margin-top: 10px;
+  
+  
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0px 80px 0px 80px; */
+  
+  
+}
+.login-btn{
+  text-decoration: none;
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+  height: 35px;
+  text-align: center;
+  margin-top: 13px;
+  width: 80px;
+  font-weight: 600;
+  color: blue;
+}
+.login-btn:hover{
+  background-color: white;
+  transition: 0.8s;
+
+}
+.header{
+ 
+  background-color: white;
+  margin-top: 10px;
+  align-items: center;
+  border-right: 1px solid black;
+
+}
+.img-logo{
+  border-right: 1px solid gainsboro;
+  padding: 35px;
+  
+}
+
+.social-contact-icon a{
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: 100;
+  font-size: 80%;
+ 
+}
+.social-contact-icon a i{
+  color: rgb(59, 230, 82);
+}
+.social-contact-icon a:hover{
+  color: red;
+
+}
+.more-icon a i{
+ padding: 10px;
+ color: rgb(187, 180, 180);
+ font-size: 13px;
+
+}
+
+
+.carousel-open:checked+.carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #2b6cb0;
+  /*Set to match the Tailwind colour you want the active one to be */
+}
+.grid-text{
+  font-weight: 600;
+}
+.service{
+  text-align: center;
+}
+.feature-icon span i{
+  /* padding-top: 5px; */
+  font-size: 30px;
+  color:rgb(3, 192, 135) ;
+}
+.feature-icon span h4{
+  font-weight: 600;
+  margin-left: 5px;
+  
+}
+
+.feature-text{
+  color: rgb(65, 196, 146);
+}
+span .fa-twitter{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color:rgb(3, 192, 135) ;
+}
+.help-text{
+  background-color: rgb(3, 192, 135);
+  color: white;
+}
+.help-text:hover{
+  background-color: rgb(63, 60, 60);
+}
+.footer{
+  background-image: url("../public/images/footer-background-image.jpg") ;
+}
+.navbar {
+  border-top: 1px solid gainsboro;
+  overflow: hidden;
+  background-color: rgb(250, 252, 253);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(55, 45, 189);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(68, 35, 189);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  /* background-color: rgb(61, 29, 221); */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(52, 55, 219);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(60, 32, 219);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
